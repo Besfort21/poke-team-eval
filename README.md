@@ -92,28 +92,6 @@ The API is also self-documented at `http://localhost:8000/docs`.
 
 ---
 
-## Project Structure
-
-
-poke-team-eval/
-├── pokeeval/           # Core Python package
-│   ├── models.py       # Dataclasses: Pokemon, Team, EvalReport
-│   ├── data_loader.py  # Load cached PokéAPI data
-│   ├── type_chart.py   # Per-generation type effectiveness engine
-│   ├── evaluator.py    # Team evaluation logic
-│   └── builder.py      # Rule-based team builder
-├── cli/
-│   └── main.py         # Click + Rich CLI
-├── web/
-│   ├── app.py          # FastAPI backend
-│   └── static/         # HTML, CSS, JS frontend
-├── tests/              # pytest test suite
-├── scripts/
-│   └── fetch_data.py   # One-time PokéAPI data fetch
-└── data/               # Cached Pokémon JSON (git-tracked)
-
----
-
 ## Tech Stack
 
 | Layer | Tool |
