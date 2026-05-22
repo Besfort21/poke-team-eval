@@ -59,7 +59,7 @@ def load_all_pokemon(generation: int) -> list[Pokemon]:
 
 def find_pokemon_by_name(name: str, generation: int) -> Pokemon | None:
     """Find a single Pokémon by name within a generation's pool."""
-    name = name.strip().lower()
+    name = normalise_name(name)
     all_mon = load_all_pokemon(generation)
     for mon in all_mon:
         if mon.name == name:
@@ -69,7 +69,25 @@ def find_pokemon_by_name(name: str, generation: int) -> Pokemon | None:
 
 def search_pokemon_by_name(query: str, generation: int, limit: int = 10) -> list[Pokemon]:
     """Return Pokémon whose names start with the query string (for autocomplete)."""
-    query = query.strip().lower()
+    query = normalise_name(query)
     all_mon = load_all_pokemon(generation)
     results = [mon for mon in all_mon if mon.name.startswith(query)]
     return results[:limit]
+
+def normalise_name(name: str) -> str:
+    """
+    Normalise a user-supplied Pokémon name to match PokéAPI format.
+    Handles spaces, dots, and common alternate spellings.
+    Examples:
+        "Mr Mime"   → "mr-mime"
+        "Mr. Mime"  → "mr-mime"
+        "Porygon Z" → "porygon-z"
+        "Ho Oh"     → "ho-oh"
+        "Farfetch'd" → "farfetchd"  (apostrophes removed)
+    """
+    name = name.strip().lower()
+    name = name.replace(".", "")       # remove dots
+    name = name.replace("'", "")       # remove apostrophes (farfetch'd)
+    name = name.replace(" ", "-")      # spaces → hyphens
+    name = name.replace("--", "-")     # clean up double hyphens
+    return name
