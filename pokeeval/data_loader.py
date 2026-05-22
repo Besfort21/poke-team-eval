@@ -24,7 +24,7 @@ def load_pokemon(pokemon_id: int) -> Pokemon | None:
     with open(path, "r") as f:
         data = json.load(f)
 
-    return Pokemon(
+    mon = Pokemon(
         id=data["id"],
         name=data["name"],
         types=data["types"],
@@ -36,6 +36,8 @@ def load_pokemon(pokemon_id: int) -> Pokemon | None:
         speed=data["stats"]["speed"],
         generation_introduced=data["generation_introduced"],
     )
+    mon.bst = mon.hp + mon.attack + mon.defense + mon.sp_atk + mon.sp_def + mon.speed
+    return mon
 
 
 def load_all_pokemon(generation: int) -> list[Pokemon]:

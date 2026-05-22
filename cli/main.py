@@ -173,11 +173,34 @@ def evaluate(gen, json_out, pokemon):
               type=click.IntRange(1, 9), help="Generation (1–9)")
 @click.option("--anchor", "-a", multiple=True, required=True,
               help="Pokémon you want on the team (use multiple times)")
-def build(gen, anchor):
-    """Build a team around one or more anchor Pokémon. (Builder coming in Milestone 5)"""
-    console.print(f"[yellow]Builder not yet implemented — coming in Milestone 5.[/yellow]")
-    console.print(f"Anchors received: {', '.join(anchor)}")
-    console.print(f"Generation: {gen}")
+@click.option("--min-bst", "min_bst", default=400, show_default=True,
+              type=int, help="Minimum Base Stat Total for suggested Pokémon")
+def build(gen, anchor, min_bst):
+    """Build a team around one or more anchor Pokémon."""
+    from pokeeval.builder import build_team
+    from pokeeval.data_loader import find_pokemon_by_name, load_all_pokemon
+
+    anchors = []
+    for name in anchor:
+        mon = find_pokemon_by_name(name.lower(), gen)
+        if mon is None:
+            console.print(f"[red]Error:[/red] '{name}' not found in Gen {gen}.")
+            raise SystemExit(1)
+        anchors.append(mon)
+
+    console.print(f"\n[bold yellow]Building team around: "
+                  f"{', '.join(a.name.capitalize() for a in anchors)}[/bold yellow]")
+    console.print(f"Loading Gen {gen} Pokémon pool (min BST: {min_bst})...\n")
+
+    pool = load_all_pokemon(gen)
+    suggestion = build_team(anchors, gen, pool, min_bst=min_bst)
+
+    console.rule("[bold yellow]Suggested Team[/bold yellow]")
+    for i, explanation in enumerate(suggestion.explanations, 1):
+        console.print(f"  [cyan]{i}.[/cyan] {explanation}")
+
+    console.print()
+    print_report(suggestion.eval_report)
 
 
 @cli.command("fetch-data")

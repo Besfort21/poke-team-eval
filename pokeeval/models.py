@@ -13,6 +13,7 @@ class Pokemon:
     sp_def: int
     speed: int
     generation_introduced: int
+    bst: int = 0
 
 
 @dataclass
