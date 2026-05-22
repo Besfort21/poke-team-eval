@@ -74,7 +74,7 @@ GEN6_CHART = {
     **GEN5_CHART,
     "fairy":    {"fighting": 2, "dragon": 2, "dark": 2, "fire": 0.5, "poison": 0.5, "steel": 0.5},
     "poison":   {"grass": 2, "poison": 0.5, "ground": 0.5, "rock": 0.5, "ghost": 0.5,
-                 "steel": 0, "fairy": 2, "bug": 0.5},
+                 "steel": 0.5, "fairy": 2, "bug": 0.5},
     "steel":    {"fire": 0.5, "water": 0.5, "electric": 0.5, "ice": 2, "rock": 2, "steel": 0.5,
                  "flying": 0.5, "psychic": 0.5, "bug": 0.5, "grass": 0.5, "dragon": 0.5,
                  "normal": 0.5, "fairy": 2},
