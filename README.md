@@ -1,6 +1,7 @@
 # 🔴 PokéTeam Eval
 
 ![CI](https://github.com/Besfort21/poke-team-eval/actions/workflows/ci.yml/badge.svg)
+🌐 **Live demo:** https://poke-team-eval.onrender.com
 ![Python](https://img.shields.io/badge/python-3.11+-blue)
 ![Generations](https://img.shields.io/badge/generations-I--IX-red)
 
@@ -90,6 +91,8 @@ Then open `http://localhost:8000` in your browser.
 
 The API is also self-documented at `http://localhost:8000/docs`.
 
+> **Note:** The app is hosted on Render's free tier and may take up to 50 seconds
+> to respond after a period of inactivity. Subsequent requests are fast.
 ---
 
 ## Tech Stack
