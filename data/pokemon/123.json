@@ -1,0 +1,1 @@
+{"id": 123, "name": "scyther", "types": ["bug", "flying"], "stats": {"hp": 70, "attack": 110, "defense": 80, "sp_atk": 55, "sp_def": 80, "speed": 105}, "generation_introduced": 1}

@@ -1,0 +1,1 @@
+{"id": 221, "name": "piloswine", "types": ["ice", "ground"], "stats": {"hp": 100, "attack": 100, "defense": 80, "sp_atk": 60, "sp_def": 60, "speed": 50}, "generation_introduced": 2}

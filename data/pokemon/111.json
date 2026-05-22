@@ -1,0 +1,1 @@
+{"id": 111, "name": "rhyhorn", "types": ["ground", "rock"], "stats": {"hp": 80, "attack": 85, "defense": 95, "sp_atk": 30, "sp_def": 30, "speed": 25}, "generation_introduced": 1}

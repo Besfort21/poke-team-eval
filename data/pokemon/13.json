@@ -1,0 +1,1 @@
+{"id": 13, "name": "weedle", "types": ["bug", "poison"], "stats": {"hp": 40, "attack": 35, "defense": 30, "sp_atk": 20, "sp_def": 20, "speed": 50}, "generation_introduced": 1}

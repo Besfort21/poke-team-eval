@@ -1,0 +1,1 @@
+{"id": 219, "name": "magcargo", "types": ["fire", "rock"], "stats": {"hp": 60, "attack": 50, "defense": 120, "sp_atk": 90, "sp_def": 80, "speed": 30}, "generation_introduced": 2}

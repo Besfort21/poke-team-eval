@@ -1,0 +1,1 @@
+{"id": 100, "name": "voltorb", "types": ["electric"], "stats": {"hp": 40, "attack": 30, "defense": 50, "sp_atk": 55, "sp_def": 55, "speed": 100}, "generation_introduced": 1}

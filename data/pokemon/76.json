@@ -1,0 +1,1 @@
+{"id": 76, "name": "golem", "types": ["rock", "ground"], "stats": {"hp": 80, "attack": 120, "defense": 130, "sp_atk": 55, "sp_def": 65, "speed": 45}, "generation_introduced": 1}

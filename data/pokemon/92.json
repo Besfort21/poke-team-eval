@@ -1,0 +1,1 @@
+{"id": 92, "name": "gastly", "types": ["ghost", "poison"], "stats": {"hp": 30, "attack": 35, "defense": 30, "sp_atk": 100, "sp_def": 35, "speed": 80}, "generation_introduced": 1}
