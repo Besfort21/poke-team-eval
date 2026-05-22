@@ -1,1 +1,1 @@
-{"id": 913, "name": "quaxwell", "types": ["water"], "stats": {"hp": 70, "attack": 85, "defense": 65, "sp_atk": 65, "sp_def": 60, "speed": 65}, "generation_introduced": 9}
+{"id": 913, "name": "quaxwell", "types": ["water"], "stats": {"hp": 70, "attack": 85, "defense": 65, "sp_atk": 65, "sp_def": 60, "speed": 65}, "generation_introduced": 9, "learnset": {"9": ["pound", "wing-attack", "growl", "water-gun", "focus-energy", "feather-dance", "water-pulse", "air-slash", "aqua-jet", "double-hit", "low-sweep", "acrobatics", "work-up", "liquidation", "aqua-cutter"]}}

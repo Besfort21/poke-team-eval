@@ -1,1 +1,1 @@
-{"id": 942, "name": "maschiff", "types": ["dark"], "stats": {"hp": 60, "attack": 78, "defense": 60, "sp_atk": 40, "sp_def": 51, "speed": 51}, "generation_introduced": 9}
+{"id": 942, "name": "maschiff", "types": ["dark"], "stats": {"hp": 60, "attack": 78, "defense": 60, "sp_atk": 40, "sp_def": 51, "speed": 51}, "generation_introduced": 9, "learnset": {"9": ["headbutt", "tackle", "double-edge", "leer", "bite", "roar", "lick", "reversal", "scary-face", "swagger", "crunch", "payback", "hone-claws", "snarl", "jaw-lock"]}}

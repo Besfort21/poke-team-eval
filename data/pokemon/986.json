@@ -1,1 +1,1 @@
-{"id": 986, "name": "brute-bonnet", "types": ["grass", "dark"], "stats": {"hp": 111, "attack": 127, "defense": 99, "sp_atk": 79, "sp_def": 99, "speed": 55}, "generation_introduced": 9}
+{"id": 986, "name": "brute-bonnet", "types": ["grass", "dark"], "stats": {"hp": 111, "attack": 127, "defense": 99, "sp_atk": 79, "sp_def": 99, "speed": 55}, "generation_introduced": 9, "learnset": {"9": ["thrash", "absorb", "mega-drain", "growth", "solar-beam", "stun-spore", "spore", "giga-drain", "synthesis", "ingrain", "astonish", "payback", "sucker-punch", "rage-powder", "clear-smog"]}}

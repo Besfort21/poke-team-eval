@@ -1,1 +1,1 @@
-{"id": 946, "name": "bramblin", "types": ["grass", "ghost"], "stats": {"hp": 40, "attack": 65, "defense": 30, "sp_atk": 45, "sp_def": 35, "speed": 60}, "generation_introduced": 9}
+{"id": 946, "name": "bramblin", "types": ["grass", "ghost"], "stats": {"hp": 40, "attack": 65, "defense": 30, "sp_atk": 45, "sp_def": 35, "speed": 60}, "generation_introduced": 9, "learnset": {"9": ["disable", "absorb", "mega-drain", "defense-curl", "curse", "giga-drain", "rollout", "pain-split", "rapid-spin", "astonish", "bullet-seed", "power-whip", "hex", "phantom-force", "infestation"]}}

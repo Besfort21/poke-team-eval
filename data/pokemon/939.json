@@ -1,1 +1,1 @@
-{"id": 939, "name": "bellibolt", "types": ["electric"], "stats": {"hp": 109, "attack": 64, "defense": 91, "sp_atk": 103, "sp_def": 83, "speed": 45}, "generation_introduced": 9}
+{"id": 939, "name": "bellibolt", "types": ["electric"], "stats": {"hp": 109, "attack": 64, "defense": 91, "sp_atk": 103, "sp_def": 83, "speed": 45}, "generation_introduced": 9, "learnset": {"9": ["tackle", "water-gun", "thunder-shock", "flail", "mud-slap", "zap-cannon", "spark", "charge", "slack-off", "weather-ball", "mud-shot", "sucker-punch", "discharge", "electric-terrain"]}}

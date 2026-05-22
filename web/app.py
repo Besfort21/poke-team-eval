@@ -50,6 +50,7 @@ def serialise_report(report) -> dict:
                     "sp_def":  m.pokemon.sp_def,
                     "speed":   m.pokemon.speed,
                 },
+                "key_moves": m.key_moves,
             }
             for m in report.team
         ],

@@ -1,1 +1,1 @@
-{"id": 235, "name": "smeargle", "types": ["normal"], "stats": {"hp": 55, "attack": 20, "defense": 35, "sp_atk": 20, "sp_def": 45, "speed": 75}, "generation_introduced": 2}
+{"id": 235, "name": "smeargle", "types": ["normal"], "stats": {"hp": 55, "attack": 20, "defense": 35, "sp_atk": 20, "sp_def": 45, "speed": 75}, "generation_introduced": 2, "learnset": {"2": ["sketch"], "3": ["sketch"], "4": ["sketch"], "5": ["sketch"], "6": ["sketch"], "7": ["sketch"], "9": ["sketch"]}}

@@ -1,1 +1,1 @@
-{"id": 940, "name": "wattrel", "types": ["electric", "flying"], "stats": {"hp": 40, "attack": 40, "defense": 35, "sp_atk": 55, "sp_def": 40, "speed": 70}, "generation_introduced": 9}
+{"id": 940, "name": "wattrel", "types": ["electric", "flying"], "stats": {"hp": 40, "attack": 40, "defense": 35, "sp_atk": 55, "sp_def": 40, "speed": 70}, "generation_introduced": 9, "learnset": {"9": ["growl", "peck", "thunder-shock", "agility", "quick-attack", "spark", "uproar", "roost", "pluck", "discharge", "volt-switch", "dual-wingbeat"]}}

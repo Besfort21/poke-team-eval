@@ -14,13 +14,14 @@ class Pokemon:
     speed: int
     generation_introduced: int
     bst: int = 0
+    learnset: dict = field(default_factory=dict)
 
 
 @dataclass
 class TeamMember:
     pokemon: Pokemon
     role: str = ""            # filled in by the evaluator e.g. "Physical Attacker"
-
+    key_moves: list = field(default_factory=list)
 
 @dataclass
 class TypeCoverageReport:

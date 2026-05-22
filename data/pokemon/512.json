@@ -1,1 +1,1 @@
-{"id": 512, "name": "simisage", "types": ["grass"], "stats": {"hp": 75, "attack": 98, "defense": 63, "sp_atk": 98, "sp_def": 63, "speed": 101}, "generation_introduced": 5}
+{"id": 512, "name": "simisage", "types": ["grass"], "stats": {"hp": 75, "attack": 98, "defense": 63, "sp_atk": 98, "sp_def": 63, "speed": 101}, "generation_introduced": 5, "learnset": {"5": ["leer", "lick", "fury-swipes", "seed-bomb"], "6": ["leer", "lick", "fury-swipes", "seed-bomb"], "7": ["leer", "lick", "fury-swipes", "seed-bomb"]}}

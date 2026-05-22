@@ -1,1 +1,1 @@
-{"id": 912, "name": "quaxly", "types": ["water"], "stats": {"hp": 55, "attack": 65, "defense": 45, "sp_atk": 50, "sp_def": 45, "speed": 50}, "generation_introduced": 9}
+{"id": 912, "name": "quaxly", "types": ["water"], "stats": {"hp": 55, "attack": 65, "defense": 45, "sp_atk": 50, "sp_def": 45, "speed": 50}, "generation_introduced": 9, "learnset": {"9": ["pound", "wing-attack", "growl", "water-gun", "focus-energy", "air-slash", "aqua-jet", "double-hit", "acrobatics", "work-up", "liquidation", "aqua-cutter"]}}

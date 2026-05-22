@@ -1,1 +1,1 @@
-{"id": 924, "name": "tandemaus", "types": ["normal"], "stats": {"hp": 50, "attack": 50, "defense": 45, "sp_atk": 40, "sp_def": 45, "speed": 75}, "generation_introduced": 9}
+{"id": 924, "name": "tandemaus", "types": ["normal"], "stats": {"hp": 50, "attack": 50, "defense": 45, "sp_atk": 40, "sp_def": 45, "speed": 75}, "generation_introduced": 9, "learnset": {"9": ["pound", "super-fang", "charm", "encore", "beat-up", "helping-hand", "hyper-voice", "bullet-seed", "copycat", "double-hit", "echoed-voice", "play-rough", "baby-doll-eyes", "population-bomb"]}}

@@ -1,1 +1,1 @@
-{"id": 864, "name": "cursola", "types": ["ghost"], "stats": {"hp": 60, "attack": 95, "defense": 50, "sp_atk": 145, "sp_def": 130, "speed": 30}, "generation_introduced": 8}
+{"id": 864, "name": "cursola", "types": ["ghost"], "stats": {"hp": 60, "attack": 95, "defense": 50, "sp_atk": 145, "sp_def": 130, "speed": 30}, "generation_introduced": 8, "learnset": {"8": ["tackle", "disable", "night-shade", "harden", "curse", "spite", "perish-song", "mirror-coat", "ancient-power", "grudge", "astonish", "power-gem", "hex", "strength-sap"]}}

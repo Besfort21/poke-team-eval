@@ -1,1 +1,1 @@
-{"id": 829, "name": "gossifleur", "types": ["grass"], "stats": {"hp": 40, "attack": 40, "defense": 60, "sp_atk": 40, "sp_def": 60, "speed": 10}, "generation_introduced": 8}
+{"id": 829, "name": "gossifleur", "types": ["grass"], "stats": {"hp": 40, "attack": 40, "defense": 60, "sp_atk": 40, "sp_def": 60, "speed": 10}, "generation_introduced": 8, "learnset": {"8": ["sing", "razor-leaf", "rapid-spin", "sweet-scent", "synthesis", "hyper-voice", "aromatherapy", "leaf-storm", "round", "leaf-tornado", "leafage"]}}

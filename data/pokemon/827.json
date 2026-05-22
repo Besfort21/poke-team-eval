@@ -1,1 +1,1 @@
-{"id": 827, "name": "nickit", "types": ["dark"], "stats": {"hp": 40, "attack": 28, "defense": 28, "sp_atk": 47, "sp_def": 52, "speed": 50}, "generation_introduced": 8}
+{"id": 827, "name": "nickit", "types": ["dark"], "stats": {"hp": 40, "attack": 28, "defense": 28, "sp_atk": 47, "sp_def": 52, "speed": 50}, "generation_introduced": 8, "learnset": {"8": ["tail-whip", "quick-attack", "beat-up", "assurance", "sucker-punch", "night-slash", "nasty-plot", "hone-claws", "foul-play", "tail-slap", "snarl"]}}

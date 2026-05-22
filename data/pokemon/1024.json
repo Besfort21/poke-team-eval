@@ -1,1 +1,1 @@
-{"id": 1024, "name": "terapagos", "types": ["normal"], "stats": {"hp": 90, "attack": 65, "defense": 85, "sp_atk": 65, "sp_def": 85, "speed": 60}, "generation_introduced": 9}
+{"id": 1024, "name": "terapagos", "types": ["normal"], "stats": {"hp": 90, "attack": 65, "defense": 85, "sp_atk": 65, "sp_def": 85, "speed": 60}, "generation_introduced": 9, "learnset": {"9": ["headbutt", "double-edge", "withdraw", "tri-attack", "protect", "rapid-spin", "ancient-power", "gyro-ball", "rock-polish", "earth-power", "heavy-slam", "tera-starstorm"]}}

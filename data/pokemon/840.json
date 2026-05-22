@@ -1,1 +1,1 @@
-{"id": 840, "name": "applin", "types": ["grass", "dragon"], "stats": {"hp": 40, "attack": 40, "defense": 80, "sp_atk": 40, "sp_def": 40, "speed": 20}, "generation_introduced": 8}
+{"id": 840, "name": "applin", "types": ["grass", "dragon"], "stats": {"hp": 40, "attack": 40, "defense": 80, "sp_atk": 40, "sp_def": 40, "speed": 20}, "generation_introduced": 8, "learnset": {"8": ["withdraw", "astonish"], "9": ["withdraw", "astonish"]}}

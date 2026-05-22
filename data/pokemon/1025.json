@@ -1,1 +1,1 @@
-{"id": 1025, "name": "pecharunt", "types": ["poison", "ghost"], "stats": {"hp": 88, "attack": 88, "defense": 160, "sp_atk": 88, "sp_def": 88, "speed": 88}, "generation_introduced": 9}
+{"id": 1025, "name": "pecharunt", "types": ["poison", "ghost"], "stats": {"hp": 88, "attack": 88, "defense": 160, "sp_atk": 88, "sp_def": 88, "speed": 88}, "generation_introduced": 9, "learnset": {"9": ["toxic", "recover", "withdraw", "smog", "poison-gas", "destiny-bond", "shadow-ball", "memento", "astonish", "fake-tears", "nasty-plot", "parting-shot", "malignant-chain"]}}

@@ -1,1 +1,1 @@
-{"id": 665, "name": "spewpa", "types": ["bug"], "stats": {"hp": 45, "attack": 22, "defense": 60, "sp_atk": 27, "sp_def": 30, "speed": 29}, "generation_introduced": 6}
+{"id": 665, "name": "spewpa", "types": ["bug"], "stats": {"hp": 45, "attack": 22, "defense": 60, "sp_atk": 27, "sp_def": 30, "speed": 29}, "generation_introduced": 6, "learnset": {"6": ["harden", "protect"], "7": ["harden", "protect"], "9": ["harden", "protect"]}}

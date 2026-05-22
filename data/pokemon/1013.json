@@ -1,1 +1,1 @@
-{"id": 1013, "name": "sinistcha", "types": ["grass", "ghost"], "stats": {"hp": 71, "attack": 60, "defense": 106, "sp_atk": 121, "sp_def": 80, "speed": 70}, "generation_introduced": 9}
+{"id": 1013, "name": "sinistcha", "types": ["grass", "ghost"], "stats": {"hp": 71, "attack": 60, "defense": 106, "sp_atk": 121, "sp_def": 80, "speed": 70}, "generation_introduced": 9, "learnset": {"9": ["absorb", "mega-drain", "stun-spore", "withdraw", "shadow-ball", "memento", "astonish", "leaf-storm", "rage-powder", "foul-play", "hex", "strength-sap", "life-dew", "matcha-gotcha"]}}

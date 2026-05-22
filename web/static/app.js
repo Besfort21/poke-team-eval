@@ -256,12 +256,18 @@ function renderReport(report, container) {
   table.className = 'team-table';
   table.innerHTML = `<thead><tr>
     <th>POKÉMON</th><th>TYPES</th><th>ROLE</th>
-    <th>HP</th><th>ATK</th><th>DEF</th><th>SpA</th><th>SpD</th><th>SPE</th><th>BST</th>
+    <th>HP</th><th>ATK</th><th>DEF</th><th>SpA</th><th>SpD</th><th>SPE</th><th>BST</th><th>KEY MOVES</th>
   </tr></thead>`;
   const tbody = document.createElement('tbody');
   report.team.forEach(m => {
     const tr = document.createElement('tr');
     const typesHtml = m.types.map(t => `<span class="type-badge type-${t}">${t}</span>`).join(' ');
+    const keyMovesHtml = (m.key_moves || []).map(mv => `
+      <span class="type-badge type-${mv.type}" title="${mv.damage_class} · ${mv.power} power">
+        ${mv.name.replace('-', ' ')}
+      </span>
+    `).join(' ');
+
     tr.innerHTML = `
       <td>${m.name}</td>
       <td>${typesHtml}</td>
@@ -269,6 +275,7 @@ function renderReport(report, container) {
       <td>${m.stats.hp}</td><td>${m.stats.attack}</td><td>${m.stats.defense}</td>
       <td>${m.stats.sp_atk}</td><td>${m.stats.sp_def}</td><td>${m.stats.speed}</td>
       <td style="color:var(--red-bright)">${m.bst}</td>
+      <td style="min-width:160px">${keyMovesHtml}</td>
     `;
     tbody.appendChild(tr);
   });

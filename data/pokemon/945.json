@@ -1,1 +1,1 @@
-{"id": 945, "name": "grafaiai", "types": ["poison", "normal"], "stats": {"hp": 63, "attack": 95, "defense": 65, "sp_atk": 80, "sp_def": 72, "speed": 110}, "generation_introduced": 9}
+{"id": 945, "name": "grafaiai", "types": ["poison", "normal"], "stats": {"hp": 63, "attack": 95, "defense": 65, "sp_atk": 80, "sp_def": 72, "speed": 110}, "generation_introduced": 9, "learnset": {"9": ["scratch", "leer", "fury-swipes", "slash", "substitute", "flatter", "taunt", "knock-off", "poison-fang", "u-turn", "poison-jab", "switcheroo", "gunk-shot", "acid-spray", "doodle"]}}

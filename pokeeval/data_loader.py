@@ -35,6 +35,7 @@ def load_pokemon(pokemon_id: int) -> Pokemon | None:
         sp_def=data["stats"]["sp_def"],
         speed=data["stats"]["speed"],
         generation_introduced=data["generation_introduced"],
+        learnset=data.get("learnset", {}),
     )
     mon.bst = mon.hp + mon.attack + mon.defense + mon.sp_atk + mon.sp_def + mon.speed
     return mon

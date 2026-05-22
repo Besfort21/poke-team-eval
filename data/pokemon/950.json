@@ -1,1 +1,1 @@
-{"id": 950, "name": "klawf", "types": ["rock"], "stats": {"hp": 70, "attack": 100, "defense": 115, "sp_atk": 35, "sp_def": 55, "speed": 75}, "generation_introduced": 9}
+{"id": 950, "name": "klawf", "types": ["rock"], "stats": {"hp": 70, "attack": 100, "defense": 115, "sp_atk": 35, "sp_def": 55, "speed": 75}, "generation_introduced": 9, "learnset": {"9": ["guillotine", "swords-dance", "rock-throw", "harden", "rock-slide", "flail", "protect", "metal-claw", "rock-smash", "rock-tomb", "iron-defense", "rock-blast", "x-scissor", "high-horsepower"]}}

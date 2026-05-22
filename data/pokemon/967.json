@@ -1,1 +1,1 @@
-{"id": 967, "name": "cyclizar", "types": ["dragon", "normal"], "stats": {"hp": 70, "attack": 95, "defense": 65, "sp_atk": 85, "sp_def": 65, "speed": 121}, "generation_introduced": 9}
+{"id": 967, "name": "cyclizar", "types": ["dragon", "normal"], "stats": {"hp": 70, "attack": 95, "defense": 65, "sp_atk": 85, "sp_def": 65, "speed": 121}, "generation_introduced": 9, "learnset": {"9": ["tackle", "double-edge", "bite", "growl", "quick-attack", "rapid-spin", "taunt", "dragon-claw", "u-turn", "dragon-pulse", "dragon-rush", "shift-gear", "breaking-swipe", "shed-tail"]}}

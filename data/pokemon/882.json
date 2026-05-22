@@ -1,1 +1,1 @@
-{"id": 882, "name": "dracovish", "types": ["water", "dragon"], "stats": {"hp": 90, "attack": 90, "defense": 100, "sp_atk": 70, "sp_def": 80, "speed": 75}, "generation_introduced": 8}
+{"id": 882, "name": "dracovish", "types": ["water", "dragon"], "stats": {"hp": 90, "attack": 90, "defense": 100, "sp_atk": 70, "sp_def": 80, "speed": 75}, "generation_introduced": 8, "learnset": {"8": ["stomp", "tackle", "bite", "water-gun", "super-fang", "protect", "dragon-breath", "crunch", "ancient-power", "dragon-pulse", "dragon-rush", "brutal-swing", "fishious-rend"]}}

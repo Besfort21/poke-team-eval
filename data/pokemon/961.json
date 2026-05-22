@@ -1,1 +1,1 @@
-{"id": 961, "name": "wugtrio", "types": ["water"], "stats": {"hp": 35, "attack": 100, "defense": 50, "sp_atk": 50, "sp_def": 70, "speed": 120}, "generation_introduced": 9}
+{"id": 961, "name": "wugtrio", "types": ["water"], "stats": {"hp": 35, "attack": 100, "defense": 50, "sp_atk": 50, "sp_def": 70, "speed": 120}, "generation_introduced": 9, "learnset": {"9": ["slam", "sand-attack", "headbutt", "wrap", "water-gun", "dig", "mud-slap", "water-pulse", "sucker-punch", "aqua-jet", "throat-chop", "liquidation", "triple-dive"]}}

@@ -1,1 +1,1 @@
-{"id": 935, "name": "charcadet", "types": ["fire"], "stats": {"hp": 40, "attack": 50, "defense": 40, "sp_atk": 50, "sp_def": 40, "speed": 35}, "generation_introduced": 9}
+{"id": 935, "name": "charcadet", "types": ["fire"], "stats": {"hp": 40, "attack": 50, "defense": 40, "sp_atk": 50, "sp_def": 40, "speed": 35}, "generation_introduced": 9, "learnset": {"9": ["leer", "ember", "fire-spin", "night-shade", "will-o-wisp", "astonish", "lava-plume", "flame-charge", "clear-smog", "incinerate"]}}

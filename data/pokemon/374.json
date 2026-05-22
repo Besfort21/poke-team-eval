@@ -1,1 +1,1 @@
-{"id": 374, "name": "beldum", "types": ["steel", "psychic"], "stats": {"hp": 40, "attack": 55, "defense": 80, "sp_atk": 35, "sp_def": 60, "speed": 30}, "generation_introduced": 3}
+{"id": 374, "name": "beldum", "types": ["steel", "psychic"], "stats": {"hp": 40, "attack": 55, "defense": 80, "sp_atk": 35, "sp_def": 60, "speed": 30}, "generation_introduced": 3, "learnset": {"8": ["tackle"], "9": ["tackle"], "3": ["take-down"], "4": ["take-down"], "5": ["take-down"], "6": ["take-down"], "7": ["take-down"]}}

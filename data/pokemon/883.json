@@ -1,1 +1,1 @@
-{"id": 883, "name": "arctovish", "types": ["water", "ice"], "stats": {"hp": 90, "attack": 90, "defense": 100, "sp_atk": 80, "sp_def": 90, "speed": 55}, "generation_introduced": 8}
+{"id": 883, "name": "arctovish", "types": ["water", "ice"], "stats": {"hp": 90, "attack": 90, "defense": 100, "sp_atk": 80, "sp_def": 90, "speed": 55}, "generation_introduced": 8, "learnset": {"8": ["bite", "water-gun", "blizzard", "super-fang", "powder-snow", "protect", "icy-wind", "crunch", "ancient-power", "icicle-crash", "freeze-dry", "aurora-veil", "fishious-rend"]}}

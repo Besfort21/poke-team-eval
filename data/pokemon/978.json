@@ -1,1 +1,1 @@
-{"id": 978, "name": "tatsugiri-curly", "types": ["dragon", "water"], "stats": {"hp": 68, "attack": 50, "defense": 60, "sp_atk": 120, "sp_def": 95, "speed": 82}, "generation_introduced": 9}
+{"id": 978, "name": "tatsugiri-curly", "types": ["dragon", "water"], "stats": {"hp": 68, "attack": 50, "defense": 60, "sp_atk": 120, "sp_def": 95, "speed": 82}, "generation_introduced": 9, "learnset": {"9": ["water-gun", "harden", "splash", "mirror-coat", "memento", "taunt", "helping-hand", "muddy-water", "water-pulse", "dragon-pulse", "nasty-plot", "soak"]}}

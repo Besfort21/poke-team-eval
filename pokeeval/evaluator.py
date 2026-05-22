@@ -6,6 +6,7 @@ from pokeeval.type_chart import (
     ALL_TYPES, get_effectiveness,
     team_offensive_coverage, team_defensive_profile
 )
+from pokeeval.move_classifier import refine_role, get_key_moves
 
 # --- Role classification thresholds ---
 STAT_THRESHOLD = 80      # minimum stat value to be considered "high"
@@ -155,8 +156,13 @@ def evaluate_team(team: list[Pokemon], gen: int) -> EvalReport:
 
     members = []
     for mon in team:
-        role = classify_role(mon)
-        members.append(TeamMember(pokemon=mon, role=role))
+        base_role = classify_role(mon)
+        learnset_moves = mon.learnset.get(str(gen), [])
+        refined_role = refine_role(base_role, learnset_moves, gen)
+        key_moves = get_key_moves(learnset_moves, gen)
+        member = TeamMember(pokemon=mon, role=refined_role)
+        member.key_moves = key_moves
+        members.append(member)
 
     type_coverage = evaluate_type_coverage(team, gen)
     roles = evaluate_roles(team)

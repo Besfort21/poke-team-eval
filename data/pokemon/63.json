@@ -1,1 +1,1 @@
-{"id": 63, "name": "abra", "types": ["psychic"], "stats": {"hp": 25, "attack": 20, "defense": 15, "sp_atk": 105, "sp_def": 55, "speed": 90}, "generation_introduced": 1}
+{"id": 63, "name": "abra", "types": ["psychic"], "stats": {"hp": 25, "attack": 20, "defense": 15, "sp_atk": 105, "sp_def": 55, "speed": 90}, "generation_introduced": 1, "learnset": {"1": ["teleport"], "2": ["teleport"], "3": ["teleport"], "4": ["teleport"], "5": ["teleport"], "6": ["teleport"], "7": ["teleport"], "8": ["teleport"]}}

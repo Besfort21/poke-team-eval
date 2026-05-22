@@ -1,1 +1,1 @@
-{"id": 927, "name": "dachsbun", "types": ["fairy"], "stats": {"hp": 57, "attack": 80, "defense": 115, "sp_atk": 50, "sp_def": 80, "speed": 95}, "generation_introduced": 9}
+{"id": 927, "name": "dachsbun", "types": ["fairy"], "stats": {"hp": 57, "attack": 80, "defense": 115, "sp_atk": 50, "sp_def": 80, "speed": 95}, "generation_introduced": 9, "learnset": {"9": ["tackle", "double-edge", "tail-whip", "bite", "growl", "roar", "lick", "charm", "baton-pass", "crunch", "covet", "last-resort", "work-up", "play-rough", "baby-doll-eyes"]}}

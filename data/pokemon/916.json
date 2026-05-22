@@ -1,1 +1,1 @@
-{"id": 916, "name": "oinkologne-male", "types": ["normal"], "stats": {"hp": 110, "attack": 100, "defense": 75, "sp_atk": 59, "sp_def": 80, "speed": 65}, "generation_introduced": 9}
+{"id": 916, "name": "oinkologne-male", "types": ["normal"], "stats": {"hp": 110, "attack": 100, "defense": 75, "sp_atk": 59, "sp_def": 80, "speed": 65}, "generation_introduced": 9, "learnset": {"9": ["headbutt", "tackle", "take-down", "double-edge", "tail-whip", "dig", "uproar", "yawn", "mud-shot", "covet", "earth-power", "echoed-voice", "work-up", "belch", "disarming-voice"]}}

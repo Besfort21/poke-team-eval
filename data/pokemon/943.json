@@ -1,1 +1,1 @@
-{"id": 943, "name": "mabosstiff", "types": ["dark"], "stats": {"hp": 80, "attack": 120, "defense": 90, "sp_atk": 60, "sp_def": 70, "speed": 85}, "generation_introduced": 9}
+{"id": 943, "name": "mabosstiff", "types": ["dark"], "stats": {"hp": 80, "attack": 120, "defense": 90, "sp_atk": 60, "sp_def": 70, "speed": 85}, "generation_introduced": 9, "learnset": {"9": ["headbutt", "tackle", "double-edge", "leer", "bite", "roar", "lick", "reversal", "scary-face", "outrage", "swagger", "crunch", "payback", "hone-claws", "snarl", "jaw-lock", "comeuppance"]}}

@@ -1,1 +1,1 @@
-{"id": 976, "name": "veluza", "types": ["water", "psychic"], "stats": {"hp": 90, "attack": 102, "defense": 73, "sp_atk": 78, "sp_def": 65, "speed": 70}, "generation_introduced": 9}
+{"id": 976, "name": "veluza", "types": ["water", "psychic"], "stats": {"hp": 90, "attack": 102, "defense": 73, "sp_atk": 78, "sp_def": 65, "speed": 70}, "generation_introduced": 9, "learnset": {"9": ["tackle", "focus-energy", "slash", "crunch", "water-pulse", "pluck", "night-slash", "psycho-cut", "aqua-jet", "final-gambit", "liquidation", "fillet-away", "aqua-cutter"]}}

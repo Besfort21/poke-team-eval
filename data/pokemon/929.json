@@ -1,1 +1,1 @@
-{"id": 929, "name": "dolliv", "types": ["grass", "normal"], "stats": {"hp": 52, "attack": 53, "defense": 60, "sp_atk": 78, "sp_def": 78, "speed": 33}, "generation_introduced": 9}
+{"id": 929, "name": "dolliv", "types": ["grass", "normal"], "stats": {"hp": 52, "attack": 53, "defense": 60, "sp_atk": 78, "sp_def": 78, "speed": 33}, "generation_introduced": 9, "learnset": {"9": ["tackle", "absorb", "mega-drain", "leech-seed", "growth", "razor-leaf", "flail", "sweet-scent", "helping-hand", "seed-bomb", "energy-ball", "grassy-terrain", "terrain-pulse"]}}

@@ -1,1 +1,1 @@
-{"id": 872, "name": "snom", "types": ["ice", "bug"], "stats": {"hp": 30, "attack": 25, "defense": 35, "sp_atk": 45, "sp_def": 30, "speed": 20}, "generation_introduced": 8}
+{"id": 872, "name": "snom", "types": ["ice", "bug"], "stats": {"hp": 30, "attack": 25, "defense": 35, "sp_atk": 45, "sp_def": 30, "speed": 20}, "generation_introduced": 8, "learnset": {"8": ["powder-snow", "struggle-bug"], "9": ["powder-snow", "struggle-bug"]}}

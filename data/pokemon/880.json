@@ -1,1 +1,1 @@
-{"id": 880, "name": "dracozolt", "types": ["electric", "dragon"], "stats": {"hp": 90, "attack": 100, "defense": 90, "sp_atk": 80, "sp_def": 70, "speed": 75}, "generation_introduced": 8}
+{"id": 880, "name": "dracozolt", "types": ["electric", "dragon"], "stats": {"hp": 90, "attack": 100, "defense": 90, "sp_atk": 80, "sp_def": 70, "speed": 75}, "generation_introduced": 8, "learnset": {"8": ["slam", "stomp", "tackle", "thunder-shock", "ancient-power", "charge", "aerial-ace", "pluck", "dragon-pulse", "dragon-rush", "discharge", "dragon-tail", "bolt-beak"]}}

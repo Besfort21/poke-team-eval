@@ -1,1 +1,1 @@
-{"id": 972, "name": "houndstone", "types": ["ghost"], "stats": {"hp": 72, "attack": 101, "defense": 100, "sp_atk": 50, "sp_def": 97, "speed": 68}, "generation_introduced": 9}
+{"id": 972, "name": "houndstone", "types": ["ghost"], "stats": {"hp": 72, "attack": 101, "defense": 100, "sp_atk": 50, "sp_def": 97, "speed": 68}, "generation_introduced": 9, "learnset": {"9": ["headbutt", "tackle", "double-edge", "tail-whip", "bite", "growl", "roar", "dig", "lick", "rest", "charm", "crunch", "helping-hand", "phantom-force", "play-rough", "last-respects"]}}

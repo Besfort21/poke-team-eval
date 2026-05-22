@@ -1,1 +1,1 @@
-{"id": 944, "name": "shroodle", "types": ["poison", "normal"], "stats": {"hp": 40, "attack": 65, "defense": 35, "sp_atk": 40, "sp_def": 35, "speed": 75}, "generation_introduced": 9}
+{"id": 944, "name": "shroodle", "types": ["poison", "normal"], "stats": {"hp": 40, "attack": 65, "defense": 35, "sp_atk": 40, "sp_def": 35, "speed": 75}, "generation_introduced": 9, "learnset": {"9": ["scratch", "leer", "bite", "fury-swipes", "slash", "substitute", "flatter", "taunt", "knock-off", "poison-fang", "u-turn", "poison-jab", "switcheroo", "gunk-shot", "acid-spray"]}}

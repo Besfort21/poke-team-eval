@@ -1,1 +1,1 @@
-{"id": 1015, "name": "munkidori", "types": ["poison", "psychic"], "stats": {"hp": 88, "attack": 75, "defense": 66, "sp_atk": 130, "sp_def": 90, "speed": 106}, "generation_introduced": 9}
+{"id": 1015, "name": "munkidori", "types": ["poison", "psychic"], "stats": {"hp": 88, "attack": 75, "defense": 66, "sp_atk": 130, "sp_def": 90, "speed": 106}, "generation_introduced": 9, "learnset": {"9": ["scratch", "psybeam", "confusion", "psychic", "future-sight", "fake-out", "flatter", "helping-hand", "poison-jab", "nasty-plot", "sludge-wave", "clear-smog", "parting-shot"]}}

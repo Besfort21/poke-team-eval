@@ -1,1 +1,1 @@
-{"id": 909, "name": "fuecoco", "types": ["fire"], "stats": {"hp": 67, "attack": 45, "defense": 59, "sp_atk": 63, "sp_def": 40, "speed": 36}, "generation_introduced": 9}
+{"id": 909, "name": "fuecoco", "types": ["fire"], "stats": {"hp": 67, "attack": 45, "defense": 59, "sp_atk": 63, "sp_def": 40, "speed": 36}, "generation_introduced": 9, "learnset": {"9": ["tackle", "leer", "bite", "roar", "ember", "flamethrower", "fire-blast", "yawn", "hyper-voice", "round", "incinerate", "snarl"]}}

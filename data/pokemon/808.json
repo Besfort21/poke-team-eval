@@ -1,1 +1,1 @@
-{"id": 808, "name": "meltan", "types": ["steel"], "stats": {"hp": 46, "attack": 65, "defense": 65, "sp_atk": 55, "sp_def": 35, "speed": 34}, "generation_introduced": 7}
+{"id": 808, "name": "meltan", "types": ["steel"], "stats": {"hp": 46, "attack": 65, "defense": 65, "sp_atk": 55, "sp_def": 35, "speed": 34}, "generation_introduced": 7, "learnset": {"8": ["headbutt", "tail-whip", "thunder-shock", "thunder-wave", "harden", "acid-armor", "flash-cannon"]}}

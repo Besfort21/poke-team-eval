@@ -1,1 +1,1 @@
-{"id": 951, "name": "capsakid", "types": ["grass"], "stats": {"hp": 50, "attack": 62, "defense": 40, "sp_atk": 62, "sp_def": 40, "speed": 50}, "generation_introduced": 9}
+{"id": 951, "name": "capsakid", "types": ["grass"], "stats": {"hp": 50, "attack": 62, "defense": 40, "sp_atk": 62, "sp_def": 40, "speed": 50}, "generation_introduced": 9, "learnset": {"9": ["headbutt", "leer", "bite", "growth", "razor-leaf", "solar-beam", "sunny-day", "crunch", "bullet-seed", "seed-bomb", "zen-headbutt", "leafage"]}}

@@ -1,1 +1,1 @@
-{"id": 919, "name": "nymble", "types": ["bug"], "stats": {"hp": 33, "attack": 46, "defense": 40, "sp_atk": 21, "sp_def": 25, "speed": 45}, "generation_introduced": 9}
+{"id": 919, "name": "nymble", "types": ["bug"], "stats": {"hp": 33, "attack": 46, "defense": 40, "sp_atk": 21, "sp_def": 25, "speed": 45}, "generation_introduced": 9, "learnset": {"9": ["double-kick", "tackle", "leer", "agility", "screech", "endure", "astonish", "feint", "assurance", "sucker-punch", "bug-bite", "struggle-bug", "first-impression"]}}

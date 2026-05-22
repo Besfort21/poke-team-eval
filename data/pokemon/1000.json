@@ -1,1 +1,1 @@
-{"id": 1000, "name": "gholdengo", "types": ["steel", "ghost"], "stats": {"hp": 87, "attack": 60, "defense": 95, "sp_atk": 133, "sp_def": 91, "speed": 84}, "generation_introduced": 9}
+{"id": 1000, "name": "gholdengo", "types": ["steel", "ghost"], "stats": {"hp": 87, "attack": 60, "defense": 95, "sp_atk": 133, "sp_def": 91, "speed": 84}, "generation_introduced": 9, "learnset": {"9": ["tackle", "night-shade", "recover", "confuse-ray", "substitute", "shadow-ball", "memento", "astonish", "metal-sound", "power-gem", "nasty-plot", "make-it-rain"]}}

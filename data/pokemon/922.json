@@ -1,1 +1,1 @@
-{"id": 922, "name": "pawmo", "types": ["electric", "fighting"], "stats": {"hp": 60, "attack": 75, "defense": 40, "sp_atk": 50, "sp_def": 40, "speed": 85}, "generation_introduced": 9}
+{"id": 922, "name": "pawmo", "types": ["electric", "fighting"], "stats": {"hp": 60, "attack": 75, "defense": 40, "sp_atk": 50, "sp_def": 40, "speed": 85}, "generation_introduced": 9, "learnset": {"9": ["scratch", "slam", "bite", "growl", "thunder-shock", "thunder-wave", "dig", "agility", "quick-attack", "spark", "charge", "arm-thrust", "discharge", "entrainment", "wild-charge", "nuzzle"]}}

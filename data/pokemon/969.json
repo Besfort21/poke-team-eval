@@ -1,1 +1,1 @@
-{"id": 969, "name": "glimmet", "types": ["rock", "poison"], "stats": {"hp": 48, "attack": 35, "defense": 42, "sp_atk": 105, "sp_def": 60, "speed": 60}, "generation_introduced": 9}
+{"id": 969, "name": "glimmet", "types": ["rock", "poison"], "stats": {"hp": 48, "attack": 35, "defense": 42, "sp_atk": 105, "sp_def": 60, "speed": 60}, "generation_introduced": 9, "learnset": {"9": ["rock-throw", "harden", "self-destruct", "acid-armor", "rock-slide", "sandstorm", "ancient-power", "rock-polish", "power-gem", "stealth-rock", "venoshock", "smack-down", "sludge-wave", "acid-spray"]}}

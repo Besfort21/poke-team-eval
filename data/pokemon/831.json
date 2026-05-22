@@ -1,1 +1,1 @@
-{"id": 831, "name": "wooloo", "types": ["normal"], "stats": {"hp": 42, "attack": 40, "defense": 55, "sp_atk": 40, "sp_def": 45, "speed": 48}, "generation_introduced": 8}
+{"id": 831, "name": "wooloo", "types": ["normal"], "stats": {"hp": 42, "attack": 40, "defense": 55, "sp_atk": 40, "sp_def": 45, "speed": 48}, "generation_introduced": 8, "learnset": {"8": ["double-kick", "headbutt", "tackle", "take-down", "double-edge", "growl", "defense-curl", "reversal", "copycat", "guard-swap", "guard-split", "cotton-guard"]}}

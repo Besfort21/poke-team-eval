@@ -1,1 +1,1 @@
-{"id": 953, "name": "rellor", "types": ["bug"], "stats": {"hp": 41, "attack": 50, "defense": 60, "sp_atk": 31, "sp_def": 58, "speed": 30}, "generation_introduced": 9}
+{"id": 953, "name": "rellor", "types": ["bug"], "stats": {"hp": 41, "attack": 50, "defense": 60, "sp_atk": 31, "sp_def": 58, "speed": 30}, "generation_introduced": 9, "learnset": {"9": ["sand-attack", "tackle", "take-down", "dig", "defense-curl", "rollout", "mud-shot", "bug-bite", "struggle-bug", "lunge"]}}

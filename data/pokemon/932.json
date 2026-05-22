@@ -1,1 +1,1 @@
-{"id": 932, "name": "nacli", "types": ["rock"], "stats": {"hp": 55, "attack": 55, "defense": 75, "sp_atk": 35, "sp_def": 35, "speed": 25}, "generation_introduced": 9}
+{"id": 932, "name": "nacli", "types": ["rock"], "stats": {"hp": 55, "attack": 55, "defense": 75, "sp_atk": 35, "sp_def": 35, "speed": 25}, "generation_introduced": 9, "learnset": {"9": ["headbutt", "tackle", "rock-throw", "earthquake", "recover", "harden", "rock-slide", "iron-defense", "mud-shot", "rock-polish", "stone-edge", "stealth-rock", "smack-down", "heavy-slam"]}}

@@ -1,1 +1,1 @@
-{"id": 767, "name": "wimpod", "types": ["bug", "water"], "stats": {"hp": 25, "attack": 35, "defense": 40, "sp_atk": 20, "sp_def": 30, "speed": 80}, "generation_introduced": 7}
+{"id": 767, "name": "wimpod", "types": ["bug", "water"], "stats": {"hp": 25, "attack": 35, "defense": 40, "sp_atk": 20, "sp_def": 30, "speed": 80}, "generation_introduced": 7, "learnset": {"7": ["sand-attack", "struggle-bug"], "8": ["sand-attack", "defense-curl", "struggle-bug"]}}

@@ -1,1 +1,1 @@
-{"id": 915, "name": "lechonk", "types": ["normal"], "stats": {"hp": 54, "attack": 45, "defense": 40, "sp_atk": 35, "sp_def": 45, "speed": 35}, "generation_introduced": 9}
+{"id": 915, "name": "lechonk", "types": ["normal"], "stats": {"hp": 54, "attack": 45, "defense": 40, "sp_atk": 35, "sp_def": 45, "speed": 35}, "generation_introduced": 9, "learnset": {"9": ["headbutt", "tackle", "take-down", "double-edge", "tail-whip", "dig", "uproar", "yawn", "mud-shot", "covet", "echoed-voice", "work-up", "disarming-voice"]}}

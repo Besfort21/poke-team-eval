@@ -1,1 +1,1 @@
-{"id": 825, "name": "dottler", "types": ["bug", "psychic"], "stats": {"hp": 50, "attack": 35, "defense": 80, "sp_atk": 50, "sp_def": 90, "speed": 30}, "generation_introduced": 8}
+{"id": 825, "name": "dottler", "types": ["bug", "psychic"], "stats": {"hp": 50, "attack": 35, "defense": 80, "sp_atk": 50, "sp_def": 90, "speed": 30}, "generation_introduced": 8, "learnset": {"8": ["confusion", "light-screen", "reflect", "struggle-bug"]}}

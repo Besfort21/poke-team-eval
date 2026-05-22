@@ -1,1 +1,1 @@
-{"id": 938, "name": "tadbulb", "types": ["electric"], "stats": {"hp": 61, "attack": 31, "defense": 41, "sp_atk": 59, "sp_def": 35, "speed": 45}, "generation_introduced": 9}
+{"id": 938, "name": "tadbulb", "types": ["electric"], "stats": {"hp": 61, "attack": 31, "defense": 41, "sp_atk": 59, "sp_def": 35, "speed": 45}, "generation_introduced": 9, "learnset": {"9": ["tackle", "water-gun", "thunder-shock", "flail", "mud-slap", "zap-cannon", "spark", "charge", "weather-ball", "mud-shot", "sucker-punch", "discharge", "electric-terrain"]}}

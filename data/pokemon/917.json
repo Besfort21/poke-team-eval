@@ -1,1 +1,1 @@
-{"id": 917, "name": "tarountula", "types": ["bug"], "stats": {"hp": 35, "attack": 41, "defense": 45, "sp_atk": 29, "sp_def": 40, "speed": 20}, "generation_introduced": 9}
+{"id": 917, "name": "tarountula", "types": ["bug"], "stats": {"hp": 35, "attack": 41, "defense": 45, "sp_atk": 29, "sp_def": 40, "speed": 20}, "generation_introduced": 9, "learnset": {"9": ["headbutt", "tackle", "counter", "string-shot", "block", "feint", "assurance", "gastro-acid", "bug-bite", "circle-throw", "struggle-bug", "sticky-web", "throat-chop", "skitter-smack"]}}

@@ -1,1 +1,1 @@
-{"id": 832, "name": "dubwool", "types": ["normal"], "stats": {"hp": 72, "attack": 80, "defense": 100, "sp_atk": 60, "sp_def": 90, "speed": 88}, "generation_introduced": 8}
+{"id": 832, "name": "dubwool", "types": ["normal"], "stats": {"hp": 72, "attack": 80, "defense": 100, "sp_atk": 60, "sp_def": 90, "speed": 88}, "generation_introduced": 8, "learnset": {"8": ["double-kick", "headbutt", "tackle", "take-down", "double-edge", "growl", "defense-curl", "reversal", "copycat", "guard-swap", "last-resort", "guard-split", "cotton-guard"]}}
