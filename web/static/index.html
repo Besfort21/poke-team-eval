@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokédex Team Eval</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-circle"></div>
+    <h1>POKÉTEAM EVAL<span>type coverage · role analysis · team builder</span></h1>
+  </div>
+</header>
+
+<main>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="evaluate">▶ EVALUATE</button>
+    <button class="tab-btn" data-tab="build">◈ BUILD</button>
+  </div>
+
+  <!-- ── EVALUATE TAB ───────────────────────────────────────────── -->
+  <div class="tab-panel active" id="tab-evaluate">
+
+    <div class="section-label">// select generation</div>
+    <div class="gen-picker" id="eval-gen-picker"></div>
+
+    <div class="section-label">// add pokémon (up to 6)</div>
+    <div class="pokemon-input-area">
+      <div class="search-row">
+        <input class="search-input" id="eval-search"
+               type="text" placeholder="type a pokémon name..." autocomplete="off" />
+        <button class="add-btn" id="eval-add-btn">ADD</button>
+        <div class="autocomplete" id="eval-autocomplete"></div>
+      </div>
+    </div>
+
+    <div class="team-slots" id="eval-slots"></div>
+
+    <button class="action-btn" id="eval-btn" disabled>ANALYSE TEAM</button>
+
+    <div id="results"></div>
+  </div>
+
+  <!-- ── BUILD TAB ─────────────────────────────────────────────── -->
+  <div class="tab-panel" id="tab-build">
+
+    <div class="section-label">// select generation</div>
+    <div class="gen-picker" id="build-gen-picker"></div>
+
+    <div class="section-label">// anchor pokémon (1–5)</div>
+    <div class="pokemon-input-area">
+      <div class="search-row">
+        <input class="search-input" id="build-search"
+               type="text" placeholder="type an anchor pokémon..." autocomplete="off" />
+        <button class="add-btn" id="build-add-btn">ADD</button>
+        <div class="autocomplete" id="build-autocomplete"></div>
+      </div>
+    </div>
+
+    <div class="team-slots" id="build-slots"></div>
+
+    <div class="bst-row">
+      <label>MIN BST</label>
+      <input type="range" id="bst-slider" min="200" max="600" step="25" value="400" />
+      <span class="bst-value" id="bst-display">400</span>
+    </div>
+
+    <button class="action-btn" id="build-btn" disabled>BUILD TEAM</button>
+
+    <div id="build-results"></div>
+  </div>
+
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
