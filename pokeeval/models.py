@@ -15,7 +15,11 @@ class Pokemon:
     generation_introduced: int
     bst: int = 0
     learnset: dict = field(default_factory=dict)
-
+    display_name: str = ""
+    
+    def __post_init__(self):
+        if not self.display_name:
+            self.display_name = self.name.replace("-", " ").title()
 
 @dataclass
 class TeamMember:

@@ -7,17 +7,16 @@ POKEMON_DIR = DATA_DIR / "pokemon"
 GEN_DEX_FILE = DATA_DIR / "generation_dex.json"
 
 
-def load_generation_dex() -> dict[int, list[int]]:
-    """Returns a mapping of generation number → list of Pokémon IDs."""
+def load_generation_dex() -> dict[int, list]:
+    """Returns a mapping of generation number → list of Pokémon IDs/names."""
     with open(GEN_DEX_FILE, "r") as f:
         raw = json.load(f)
-    # Keys are stored as strings in JSON, convert to int
     return {int(k): v for k, v in raw.items()}
 
 
-def load_pokemon(pokemon_id: int) -> Pokemon | None:
+def load_pokemon(pokemon_id_or_name) -> Pokemon | None:
     """Load a single Pokémon from its cached JSON file."""
-    path = POKEMON_DIR / f"{pokemon_id}.json"
+    path = POKEMON_DIR / f"{pokemon_id_or_name}.json"
     if not path.exists():
         return None
 
@@ -27,6 +26,7 @@ def load_pokemon(pokemon_id: int) -> Pokemon | None:
     mon = Pokemon(
         id=data["id"],
         name=data["name"],
+        display_name=data.get("display_name", ""),
         types=data["types"],
         hp=data["stats"]["hp"],
         attack=data["stats"]["attack"],
@@ -58,20 +58,27 @@ def load_all_pokemon(generation: int) -> list[Pokemon]:
 
 
 def find_pokemon_by_name(name: str, generation: int) -> Pokemon | None:
-    """Find a single Pokémon by name within a generation's pool."""
+    """Find a single Pokémon by name or display name within a generation's pool."""
     name = normalise_name(name)
     all_mon = load_all_pokemon(generation)
     for mon in all_mon:
         if mon.name == name:
             return mon
+        # Also match on normalised display name
+        if normalise_name(mon.display_name) == name:
+            return mon
     return None
 
 
 def search_pokemon_by_name(query: str, generation: int, limit: int = 10) -> list[Pokemon]:
-    """Return Pokémon whose names start with the query string (for autocomplete)."""
+    """Return Pokémon whose names or display names start with the query."""
     query = normalise_name(query)
     all_mon = load_all_pokemon(generation)
-    results = [mon for mon in all_mon if mon.name.startswith(query)]
+    results = [
+        mon for mon in all_mon
+        if mon.name.startswith(query)
+        or normalise_name(mon.display_name).startswith(query)
+    ]
     return results[:limit]
 
 def normalise_name(name: str) -> str:

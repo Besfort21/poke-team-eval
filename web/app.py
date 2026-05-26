@@ -39,6 +39,7 @@ def serialise_report(report) -> dict:
         "team": [
             {
                 "name": m.pokemon.name,
+                "display_name": m.pokemon.display_name,
                 "types": m.pokemon.types,
                 "role": m.role,
                 "bst": m.pokemon.bst,
@@ -70,7 +71,10 @@ def serialise_report(report) -> dict:
             "averages":    report.stats.averages,
             "highest":     {k: list(v) for k, v in report.stats.highest.items()},
             "lowest":      {k: list(v) for k, v in report.stats.lowest.items()},
-            "speed_tiers": report.stats.speed_tiers,
+            "speed_tiers": [
+                [m.pokemon.display_name, m.pokemon.speed]
+                for m in sorted(report.team, key=lambda x: x.pokemon.speed, reverse=True)
+            ],
         },
     }
 
@@ -102,14 +106,18 @@ def get_generations():
 
 @app.get("/api/pokemon/search")
 def search_pokemon(q: str, gen: int = 9, limit: int = 10):
-    """Search Pokémon by name prefix for autocomplete."""
     validate_generation(gen)
     if len(q) < 1:
         return {"results": []}
     results = search_pokemon_by_name(q.lower(), gen, limit=limit)
     return {
         "results": [
-            {"name": mon.name, "types": mon.types, "bst": mon.bst}
+            {
+                "name": mon.name,
+                "display_name": mon.display_name,
+                "types": mon.types,
+                "bst": mon.bst,
+            }
             for mon in results
         ]
     }
@@ -164,8 +172,13 @@ def build(req: BuildRequest):
 
     return {
         "explanations": suggestion.explanations,
-        "team": [
-            {"name": mon.name, "types": mon.types, "bst": mon.bst}
+       "team": [
+            {
+                "name": mon.name,
+                "display_name": mon.display_name,
+                "types": mon.types,
+                "bst": mon.bst,
+            }
             for mon in suggestion.team
         ],
         "eval_report": serialise_report(suggestion.eval_report),

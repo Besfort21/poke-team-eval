@@ -36,6 +36,81 @@ GEN_VERSION_MAP = {
     9: "violet",
 }
 
+# Regional forms — API name → generation introduced
+REGIONAL_FORMS = {
+    # Alolan forms (Gen 7)
+    "rattata-alola": 7, "raticate-alola": 7, "raichu-alola": 7,
+    "sandshrew-alola": 7, "sandslash-alola": 7, "vulpix-alola": 7,
+    "ninetales-alola": 7, "diglett-alola": 7, "dugtrio-alola": 7,
+    "meowth-alola": 7, "persian-alola": 7, "geodude-alola": 7,
+    "graveler-alola": 7, "golem-alola": 7, "grimer-alola": 7,
+    "muk-alola": 7, "exeggutor-alola": 7, "marowak-alola": 7,
+
+    # Galarian forms (Gen 8)
+    "meowth-galar": 8, "ponyta-galar": 8, "rapidash-galar": 8,
+    "slowpoke-galar": 8, "slowbro-galar": 8, "farfetchd-galar": 8,
+    "weezing-galar": 8, "mr-mime-galar": 8, "articuno-galar": 8,
+    "zapdos-galar": 8, "moltres-galar": 8, "slowking-galar": 8,
+    "corsola-galar": 8, "zigzagoon-galar": 8, "linoone-galar": 8,
+    "darumaka-galar": 8, "darmanitan-galar-standard": 8,
+    "darmanitan-galar-zen": 8, "yamask-galar": 8, "stunfisk-galar": 8,
+
+    # Hisuian forms (Gen 8)
+    "growlithe-hisui": 8, "arcanine-hisui": 8, "voltorb-hisui": 8,
+    "electrode-hisui": 8, "typhlosion-hisui": 8, "qwilfish-hisui": 8,
+    "sneasel-hisui": 8, "samurott-hisui": 8, "lilligant-hisui": 8,
+    "zorua-hisui": 8, "zoroark-hisui": 8, "braviary-hisui": 8,
+    "sliggoo-hisui": 8, "goodra-hisui": 8, "avalugg-hisui": 8,
+    "decidueye-hisui": 8,
+
+    # Paldean forms (Gen 9)
+    "tauros-paldea-combat-breed": 9, "tauros-paldea-blaze-breed": 9,
+    "tauros-paldea-aqua-breed": 9, "wooper-paldea": 9,
+}
+
+# Region suffix → display prefix
+REGION_DISPLAY = {
+    "alola": "Alolan",
+    "galar": "Galarian",
+    "hisui": "Hisuian",
+    "paldea": "Paldean",
+}
+
+def make_display_name(api_name: str) -> str:
+    """
+    Convert API name to display name.
+    e.g. 'marowak-alola'              → 'Alolan Marowak'
+         'darmanitan-galar-standard'  → 'Galarian Darmanitan (Standard)'
+         'tauros-paldea-combat-breed' → 'Paldean Tauros (Combat)'
+    """
+    # Strip '-breed' suffix — not meaningful for display
+    api_name = api_name.replace("-breed", "")
+
+    parts = api_name.split("-")
+
+    # Find the region part
+    region_prefix = None
+    region_idx = None
+    for i, part in enumerate(parts):
+        if part in REGION_DISPLAY:
+            region_prefix = REGION_DISPLAY[part]
+            region_idx = i
+            break
+
+    if region_prefix is None:
+        return api_name.replace("-", " ").title()
+
+    # Base name is everything before the region suffix
+    base_name = " ".join(parts[:region_idx]).title()
+
+    # Variant is everything after the region suffix
+    variant_parts = parts[region_idx + 1:]
+    if variant_parts:
+        variant = variant_parts[0].title()
+        return f"{region_prefix} {base_name} ({variant})"
+
+    return f"{region_prefix} {base_name}"
+
 STAT_KEY_MAP = {
     "hp": "hp",
     "attack": "attack",
@@ -111,21 +186,27 @@ def version_group_to_gen(version_group: str) -> int | None:
     return VERSION_GROUP_GEN_MAP.get(version_group)
 
 
-def fetch_and_save_pokemon(pokemon_id: int) -> bool:
-    path = POKEMON_DIR / f"{pokemon_id}.json"
+def fetch_and_save_pokemon(
+    pokemon_id_or_name,
+    gen_override: int = None,
+    display_name: str = None,
+) -> bool:
+    # For regional forms use name as key, for regular use id
+    is_form = isinstance(pokemon_id_or_name, str)
+    cache_key = pokemon_id_or_name if is_form else pokemon_id_or_name
+    path = POKEMON_DIR / f"{cache_key}.json"
 
-    # Check if already cached WITH learnset
     if path.exists():
         with open(path) as f:
             existing = json.load(f)
         if "learnset" in existing:
-            return True  # already has learnset, skip
+            return True
 
-    url = f"{BASE_URL}/pokemon/{pokemon_id}"
+    url = f"{BASE_URL}/pokemon/{pokemon_id_or_name}"
     try:
         data = fetch_json(url)
     except RuntimeError:
-        print(f"  Skipping #{pokemon_id} — could not fetch")
+        print(f"  Skipping {pokemon_id_or_name} — could not fetch")
         return False
 
     types = [t["type"]["name"] for t in data["types"]]
@@ -137,20 +218,23 @@ def fetch_and_save_pokemon(pokemon_id: int) -> bool:
 
     learnset = extract_learnset(data.get("moves", []))
 
+    gen = gen_override if gen_override else get_generation_introduced(data["id"])
+
     record = {
-        "id": pokemon_id,
+        "id": data["id"],
         "name": data["name"],
+        "display_name": display_name or data["name"].replace("-", " ").title(),
         "types": types,
         "stats": stats,
-        "generation_introduced": get_generation_introduced(pokemon_id),
+        "generation_introduced": gen,
         "learnset": learnset,
+        "is_regional_form": is_form,
     }
 
     with open(path, "w") as f:
         json.dump(record, f)
 
     return True
-
 
 def fetch_and_save_move(move_name: str) -> bool:
     path = MOVES_DIR / f"{move_name}.json"
@@ -188,14 +272,14 @@ def collect_all_move_names() -> set[str]:
     return moves
 
 
-def build_generation_dex() -> dict[int, list[int]]:
+def build_generation_dex() -> dict[str, list]:
     gen_dex = {}
     for gen, (start, end) in GEN_DEX_RANGES.items():
-        gen_dex[gen] = list(range(start, end + 1))
+        gen_dex[str(gen)] = list(range(start, end + 1))
     return gen_dex
 
 
-def save_generation_dex(gen_dex: dict[int, list[int]]):
+def save_generation_dex(gen_dex: dict):
     path = DATA_DIR / "generation_dex.json"
     with open(path, "w") as f:
         json.dump(gen_dex, f)
@@ -205,33 +289,46 @@ def save_generation_dex(gen_dex: dict[int, list[int]]):
 def main():
     print("Building generation dex...")
     gen_dex = build_generation_dex()
-    save_generation_dex(gen_dex)
 
     total = 1025
-    print(f"Fetching {total} Pokémon (with learnsets) — this will take longer than before...")
-
+    print(f"Fetching {total} Pokémon (with learnsets)...")
     success = 0
     for pid in range(1, total + 1):
         print(f"  #{pid:04d}", end="\r")
         if fetch_and_save_pokemon(pid):
             success += 1
         time.sleep(0.15)
-
     print(f"\nDone. {success}/{total} Pokémon cached.")
+
+    print(f"\nFetching {len(REGIONAL_FORMS)} regional forms...")
+    form_success = 0
+    for form_name, gen in REGIONAL_FORMS.items():
+        print(f"  {form_name}        ", end="\r")
+        display = make_display_name(form_name)
+        if fetch_and_save_pokemon(form_name, gen_override=gen, display_name=display):
+            # Add to generation dex
+            for g in range(gen, 10):
+                gen_str = str(g)
+                if gen_str not in gen_dex:
+                    gen_dex[gen_str] = []
+                if form_name not in gen_dex[gen_str]:
+                    gen_dex[gen_str].append(form_name)
+            form_success += 1
+        time.sleep(0.15)
+    print(f"\nDone. {form_success}/{len(REGIONAL_FORMS)} regional forms cached.")
+
+    save_generation_dex(gen_dex)
 
     print("\nCollecting all move names from learnsets...")
     all_moves = collect_all_move_names()
     print(f"Found {len(all_moves)} unique moves. Fetching move data...")
-
     move_success = 0
     for i, move_name in enumerate(sorted(all_moves), 1):
         print(f"  {i}/{len(all_moves)} {move_name}        ", end="\r")
         if fetch_and_save_move(move_name):
             move_success += 1
         time.sleep(0.1)
-
-    print(f"\nDone. {move_success}/{len(all_moves)} moves cached to data/moves/")
-
+    print(f"\nDone. {move_success}/{len(all_moves)} moves cached.")
 
 if __name__ == "__main__":
     main()

@@ -75,7 +75,7 @@ function renderSlots(containerId, list, maxSlots, removeFn) {
 
       const name = document.createElement('div');
       name.className = 'slot-name';
-      name.textContent = mon.name;
+      name.textContent = mon.display_name;
 
       const types = document.createElement('div');
       types.style.display = 'flex';
@@ -124,7 +124,7 @@ function setupAutocomplete(inputId, acId, stateKey, onSelect) {
 
         const nameEl = document.createElement('span');
         nameEl.className = 'ac-name';
-        nameEl.textContent = mon.name;
+        nameEl.textContent = mon.display_name;
 
         const typesEl = document.createElement('span');
         typesEl.style.display = 'flex';
@@ -269,7 +269,7 @@ function renderReport(report, container) {
     `).join(' ');
 
     tr.innerHTML = `
-      <td>${m.name}</td>
+      <td>${m.display_name}</td>
       <td>${typesHtml}</td>
       <td style="font-size:11px;color:var(--text-dim)">${m.role}</td>
       <td>${m.stats.hp}</td><td>${m.stats.attack}</td><td>${m.stats.defense}</td>
@@ -395,7 +395,7 @@ document.getElementById('eval-btn').addEventListener('click', async () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         generation: state.eval.gen,
-        pokemon: state.eval.team.map(m => m.name),
+        pokemon: state.eval.team.map(m => m.display_name),
       }),
     });
 
@@ -423,7 +423,7 @@ document.getElementById('build-btn').addEventListener('click', async () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         generation: state.build.gen,
-        anchors: state.build.anchors.map(m => m.name),
+        anchors: state.build.anchors.map(m => m.display_name),
         min_bst: parseInt(bstSlider.value),
       }),
     });
@@ -458,7 +458,7 @@ document.getElementById('build-btn').addEventListener('click', async () => {
 
       const name = document.createElement('span');
       name.className = 'suggestion-name';
-      name.textContent = mon.name;
+      name.textContent = mon.display_name;
 
       const typesEl = document.createElement('span');
       typesEl.style.display = 'flex';
