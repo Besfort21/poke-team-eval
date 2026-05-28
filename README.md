@@ -22,6 +22,41 @@ A Pokémon team analyser and builder for Generations I–IX. Built entirely in P
 
 ---
 
+## Architecture & System Design
+
+The project is built around a strict separation between the **core logic layer**
+and the **interface layer**. The core logic package (`pokeeval/`) has zero
+dependency on any web framework or CLI library — it is plain Python that can
+be called from anywhere.
+
+### Key Design Decisions
+
+**Data-driven, not hardcoded** — type charts, Pokémon stats, and learnsets
+are all stored as JSON files fetched once from PokéAPI. Adding a new
+generation means adding data files, not changing logic.
+
+**Core logic is interface-agnostic** — `evaluate_team()` and `build_team()`
+are plain Python functions. The CLI calls them directly. FastAPI wraps them
+in HTTP endpoints. Tests call them directly. No framework coupling.
+
+**Single source of truth** — the FastAPI backend serves both the web frontend
+and the Flutter mobile app. Business logic lives in one place and both
+clients benefit from any improvement automatically.
+
+**Generation accuracy** — type charts are versioned per generation. The
+evaluator always loads the chart matching the selected generation, handling
+historical changes like the Gen 1 Ghost/Psychic bug, Steel added in Gen 2,
+and Fairy added in Gen 6.
+
+**Role classification pipeline** — roles are determined in two passes:
+1. Base stats → coarse role (Physical Attacker, Special Wall, etc.)
+2. Level-up learnset → correction pass (catches edge cases base stats miss)
+
+The two-pass approach keeps the primary signal (stats) dominant while
+using movesets only to fix genuine misclassifications.
+
+---
+
 ## Screenshots
 
 ### Evaluate Tab
